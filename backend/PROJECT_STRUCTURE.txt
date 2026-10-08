@@ -1,0 +1,36 @@
+public-complaint-backend/
+├── pom.xml
+├── README.md
+├── database/
+│   ├── 01_create_database.sql
+│   ├── 02_create_tables.sql
+│   ├── 03_sample_data.sql
+│   ├── 04_create_procedure.sql
+│   ├── 05_create_function.sql
+│   ├── 06_create_trigger.sql
+│   ├── 07_join.sql
+│   ├── 08_subquery.sql
+│   └── 09_test_routines.sql
+└── src/main/
+    ├── java/com/example/publiccomplaint/
+    │   ├── PublicComplaintApplication.java
+    │   ├── config/CorsConfig.java
+    │   ├── controller/
+    │   │   ├── CategoryController.java
+    │   │   ├── CitizenController.java
+    │   │   ├── ComplaintController.java
+    │   │   └── OfficerController.java
+    │   ├── dto/
+    │   │   ├── AboveAverageCategoryResponse.java
+    │   │   ├── ComplaintResponse.java
+    │   │   ├── CreateComplaintRequest.java
+    │   │   ├── HistoryResponse.java
+    │   │   ├── IdNameResponse.java
+    │   │   ├── OpenComplaintCountResponse.java
+    │   │   └── UpdateStatusRequest.java
+    │   ├── exception/
+    │   │   ├── GlobalExceptionHandler.java
+    │   │   └── ResourceNotFoundException.java
+    │   ├── repository/ComplaintRepository.java
+    │   └── service/ComplaintService.java
+    └── resources/application.properties
